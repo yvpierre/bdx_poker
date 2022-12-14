@@ -1,0 +1,28 @@
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    color: white;
+  }
+
+  .imgChat {
+    margin: 50px 0;
+  }
+
+  .btnRetour {
+    background-color: #ee2121;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 18px;
+
+    &:hover {
+      filter: drop-shadow(0px 2px 10px rgba(217, 15, 15, 0.6));
+    }
+  }
+}

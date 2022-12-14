@@ -1,0 +1,61 @@
+.navbar {
+  background-color: #140707;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-height: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .titre {
+  font-size: 36px;
+  padding-left: 20px;
+}
+.navbar .list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex: 1;
+  height: 60px;
+  margin: 0 0px 0 200px;
+}
+.navbar .item {
+  width: 100px;
+  height: 32px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.navbar .item:hover {
+  background-color: rgba(157, 155, 155, 0.2);
+}
+.navbar .auth {
+  height: 60px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar .auth .btn {
+  width: 120px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  border-radius: 10px;
+}
+.navbar .auth .btnRegister {
+  background: linear-gradient(263.17deg, #654F4F -22.09%, #490000 45.31%, #2F0000 100%);
+  border-radius: 10px;
+}
+.navbar .auth .btnLogin:hover {
+  background-color: #654F4F;
+}
+
+/*# sourceMappingURL=Navbar.module.css.map */
