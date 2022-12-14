@@ -12,7 +12,7 @@ export default function Membre({ chat }) {
     return (
         <div>
             <h1>Salut {user}</h1>
-            <img src={chat[0].url} width={chat[0].with} height={chat[0].height}/>
+            <img src={chat[0].url} width={500} height={500}/>
         </div>
     )
 }
