@@ -4,7 +4,8 @@ import Navbar from "../components/Navbar";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-      <>
+      <div className={"app"}>
+          <div className={"background"}></div>
         <head>
           <title>BDX Poker</title>
         </head>
@@ -12,7 +13,7 @@ export default function App({ Component, pageProps }: AppProps) {
           <Navbar/>
           <Component {...pageProps} />
         </body>
-      </>
+      </div>
 
   )
 }

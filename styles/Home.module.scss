@@ -8,6 +8,10 @@
   .item {
     text-decoration: underline;
     text-underline-offset: 5px;
+
+    &:hover {
+      color: #FFCECE;
+    }
   }
 
 }

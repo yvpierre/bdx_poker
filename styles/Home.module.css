@@ -9,5 +9,8 @@
   text-decoration: underline;
   text-underline-offset: 5px;
 }
+.main .item:hover {
+  color: #FFCECE;
+}
 
 /*# sourceMappingURL=Home.module.css.map */

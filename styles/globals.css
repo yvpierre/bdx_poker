@@ -21,6 +21,17 @@ a {
   }
   body {
     color: white;
-    background: #200B0B;
+
   }
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -999999;
+  background: linear-gradient(242.53deg, #1B0F0F 0.39%, #2F0000 53.31%, #1B0F0F 100%);;
+
 }

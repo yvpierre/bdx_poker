@@ -9,14 +9,13 @@ const Navbar = () => {
                 <Link href={"/"} className={styles.titre}>BDX Poker</Link>
                 <div className={styles.list}>
                     {/* Example of multiple module classes in next */}
-                    <div className={`${styles.item} ${styles.first}`}>Membres</div>
-                    <div className={styles.item}>Bientôt</div>
+                    <Link href={"/members"} className={styles.item}>Les petits chats</Link>
                     <div className={styles.item}>Bientôt</div>
                     <div className={styles.item}>Bientôt</div>
                 </div>
                 <div className={styles.auth}>
-                    <div className={`${styles.btn} ${styles.btnRegister}`}>Inscription</div>
-                    <div className={`${styles.btn} ${styles.btnLogin}`}>Connexion</div>
+                    <div className={`${styles.btn} ${styles.btnRegister}`}>Register</div>
+                    <div className={`${styles.btn} ${styles.btnLogin}`}>Login</div>
                 </div>
             </div>
         </div>

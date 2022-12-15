@@ -13,6 +13,7 @@
 .navbar .titre {
   font-size: 36px;
   padding-left: 20px;
+  font-weight: 600;
 }
 .navbar .list {
   display: flex;
@@ -23,16 +24,16 @@
   margin: 0 0px 0 200px;
 }
 .navbar .item {
-  width: 100px;
   height: 32px;
+  padding: 5px 10px;
   border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
 }
 .navbar .item:hover {
-  background-color: rgba(157, 155, 155, 0.2);
+  color: #FFCECE;
+  cursor: pointer;
 }
 .navbar .auth {
   height: 60px;
@@ -49,13 +50,14 @@
   justify-content: center;
   margin: 0 10px;
   border-radius: 10px;
+  color: white;
 }
 .navbar .auth .btnRegister {
   background: linear-gradient(263.17deg, #654F4F -22.09%, #490000 45.31%, #2F0000 100%);
   border-radius: 10px;
 }
 .navbar .auth .btnLogin:hover {
-  background-color: #654F4F;
+  border: 2px solid white;
 }
 
 /*# sourceMappingURL=Navbar.module.css.map */
