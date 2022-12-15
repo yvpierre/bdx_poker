@@ -4,14 +4,49 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 400px;
 
-  .item {
-    text-decoration: underline;
-    text-underline-offset: 5px;
+  .hero {
+    display: flex;
+    padding-top: 125px;
 
-    &:hover {
-      color: #FFCECE;
+    .left {
+      width: 500px;
+      margin-right: 400px;
+
+      .title {
+        font-size: 64px;
+      }
+
+      .subtitle {
+        font-size: 32px;
+        font-weight: 200;
+      }
+
+      .btnRegister {
+        margin-top: 20px;
+        margin-left: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        height: 48px;
+        background: linear-gradient(86.99deg, #243E36 0%, #20614D 100%);
+        box-shadow: 0px 0px 10px rgba(213, 205, 205, 0.2);
+        border-radius: 2550px;
+        font-weight: 600;
+      }
     }
   }
+
+  h2 {
+    font-size: 48px;
+  }
+
+  .infosMembers {
+    border: 2px solid blue;
+    margin-top: 50px;
+  }
+
 
 }

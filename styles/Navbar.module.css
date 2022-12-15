@@ -43,21 +43,23 @@
   justify-content: center;
 }
 .navbar .auth .btn {
-  width: 120px;
+  width: 100px;
   height: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 10px;
-  border-radius: 10px;
+  border-radius: 5px;
   color: white;
 }
 .navbar .auth .btnRegister {
-  background: linear-gradient(263.17deg, #654F4F -22.09%, #490000 45.31%, #2F0000 100%);
-  border-radius: 10px;
+  background-color: rgba(255, 206, 206, 0.5);
+}
+.navbar .auth .btnRegister:hover {
+  background-color: rgba(140, 46, 46, 0.8);
 }
 .navbar .auth .btnLogin:hover {
-  border: 2px solid white;
+  background-color: rgba(255, 206, 206, 0.2);
 }
 
 /*# sourceMappingURL=Navbar.module.css.map */
