@@ -42,7 +42,7 @@ export default function Game({  }) {
 
     const player2 = new Player("Eliott",927, true)
 
-    let game1 = new Game("TZAS21", [new Player("Pierre", 10, true), new Player("Pablo", 223, true)]);
+    let game1 = new Game("TZAS21", [new Player("PIERREOFLRO", 10, true), new Player("Pablo", 223, true)]);
     game1.addPlayer(player2)
 
     const test = [1,2,3,4]

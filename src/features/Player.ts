@@ -6,7 +6,12 @@ export class Player {
     state:boolean;
 
     constructor(name:string, stack:number, active:boolean) {
-        this.nom = name;
+        if(name.length>=12){
+            alert("error, name too long")
+            this.nom = "error"
+        }else{
+            this.nom = name;
+        }
         this.stack = stack;
         this.state = active;
     }

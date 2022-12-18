@@ -22,7 +22,7 @@
 
     filter: grayscale(100%);
     opacity: 50%;
-    .cardTop {
+    .cardTop, .cardBottom {
       font-style: italic;
       font-weight: 300 !important;
     }
@@ -34,21 +34,21 @@
 
   .card {
     position: absolute;
-    width: 275px;
+    width: 225px;
     height: 80px;
     background-color: black;
-    border-radius: 50px;
+    border-radius: 25px;
     filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.25));
 
     .img {
       z-index: 9999;
       border: 2px solid black;
-      width: 100px;
-      height: 100px;
+      width: 85px;
+      height: 85px;
       position: absolute;
       bottom: 0;
       left: -15px;
-      border-radius: 100px;
+      border-radius: 35px;
       background-color: grey;
       background-image: url("../public/assets/alan.jpg");
       background-size: contain;
@@ -62,13 +62,13 @@
       align-items: center;
       justify-content: center;
       right: 0;
-      border-radius: 0 100px 0 0;
+      border-radius: 0 25px 0 0;
       font-weight: 600;
-      padding-left: 10px;
       background: #161515;
       border-top: 3px solid #0F0606;
       box-shadow: 0 4px 5px rgba(0, 0, 0, 0.56);
       z-index: 20;
+      letter-spacing: 1px;
     }
 
     .cardBottom {
@@ -80,11 +80,13 @@
       justify-content: center;
       right: 0;
       bottom: 0;
-      border-radius: 0 0 100px 0;
+      border-radius: 0 0 25px 0;
       font-size: 20px;
       background-color: #1B0F0F;
       z-index: 1;
       border: 3px solid #0F0606;
+      font-weight: 200;
+      font-family: 'Ranade', sans-serif;
     }
 
     &:nth-child(5) {
