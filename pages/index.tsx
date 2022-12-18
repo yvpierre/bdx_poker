@@ -3,7 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { BrowserRouter} from "react-router-dom";
 import Link from "next/link";
-import Navbar from "../components/Navbar";
+import Navbar from "../src/components/Navbar";
 
 export default function Home() {
   return (

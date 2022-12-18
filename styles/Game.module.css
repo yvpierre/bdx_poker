@@ -33,6 +33,7 @@
   bottom: 0;
   left: -15px;
   border-radius: 100px;
+  background-color: grey;
   background-image: url("../public/assets/alan.jpg");
   background-size: contain;
 }
