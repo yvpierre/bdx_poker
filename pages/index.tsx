@@ -24,16 +24,16 @@ export default function Home() {
                   <h2>Join the crew</h2>
                   <div className={styles.box}>
                       <div className={styles.elem}>
-                          <div className={styles.elemTitle}>294</div>
-                          <div className={styles.elemSubtitle}>Cowboys</div>
+                          <div className={styles.title}>294</div>
+                          <div className={styles.subtitle}>Cowboys</div>
                       </div>
                       <div className={styles.elem}>
-                          <div className={styles.elemTitle}>24</div>
-                          <div className={styles.elemSubtitle}>Games running</div>
+                          <div className={styles.title}>24</div>
+                          <div className={styles.subtitle}>Games running</div>
                       </div>
                       <div className={styles.elem}>
-                          <div className={styles.elemTitle}>4.2BTC </div>
-                          <div className={styles.elemSubtitle}>Played</div>
+                          <div className={styles.title}>4.2BTC </div>
+                          <div className={styles.subtitle}>Played</div>
                       </div>
                   </div>
               </div>

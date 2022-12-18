@@ -10,7 +10,7 @@ const Navbar = () => {
                 <div className={styles.list}>
                     {/* Example of multiple module classes in next */}
                     <Link href={"/members"} className={styles.item}>Les petits chats</Link>
-                    <div className={styles.item}>Bientôt</div>
+                    <Link href={"/lobby"} className={styles.item}>Game test</Link>
                     <div className={styles.item}>Bientôt</div>
                 </div>
                 <div className={styles.auth}>

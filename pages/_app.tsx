@@ -4,16 +4,19 @@ import Navbar from "../components/Navbar";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-      <div className={"app"}>
-        <head>
-          <title>BDX Poker</title>
-        </head>
-        <body>
-        <div className={"background"}></div>
-        <Navbar/>
-          <Component {...pageProps} />
-        </body>
-      </div>
+      <>
+          <head>
+              <title>BDX Poker</title>
+          </head>
+          <div className={"app"}>
+              <body>
+              <div className={"background"}></div>
+              <Navbar/>
+              <Component {...pageProps} />
+              </body>
+          </div>
+      </>
+
 
   )
 }

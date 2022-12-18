@@ -11,11 +11,14 @@ export default function Membre({ chat }) {
     const {user} = router.query
 
     return (
-        <div className={styles.body}>
-            <h1>Salut {user}</h1>
-            <img src={chat[0].url} width={500} height={500} className={styles.imgChat}/>
-            <Link href={"/members"} className={styles.btnRetour}>Retour</Link>
-        </div>
+        <>
+            <div className={styles.body}>
+                <h1>Salut {user}</h1>
+                <img src={chat[0].url} width={500} height={500} className={styles.imgChat}/>
+                <Link href={"/members"} className={styles.btnRetour}>Retour</Link>
+            </div>
+        </>
+
     )
 }
 

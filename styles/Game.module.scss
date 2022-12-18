@@ -1,0 +1,113 @@
+.body {
+  margin-top: -60px !important;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  .board {
+    height: 450px;
+    width: 1000px;
+    border-radius: 200px;
+    background: #165441;
+    border: 20px solid #0F0606;
+    box-shadow: inset 0 0 30px 5px rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 200px;
+
+  }
+
+  .card {
+    position: absolute;
+    width: 275px;
+    height: 80px;
+    background-color: black;
+    border-radius: 50px;
+    filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.25));
+
+    .img {
+      z-index: 9999;
+      border: 2px solid black;
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      bottom: 0;
+      left: -15px;
+      border-radius: 100px;
+      background-image: url("../public/assets/alan.jpg");
+      background-size: contain;
+    }
+
+    .cardTop {
+      width: 80%;
+      height: 45%;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      right: 0;
+      border-radius: 0 100px 0 0;
+      font-weight: 600;
+      padding-left: 10px;
+      background: #161515;
+      border-top: 3px solid #0F0606;
+      box-shadow: 0 4px 5px rgba(0, 0, 0, 0.56);
+      z-index: 20;
+    }
+
+    .cardBottom {
+      width: 80%;
+      height: 55%;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      right: 0;
+      bottom: 0;
+      border-radius: 0 0 100px 0;
+      font-size: 20px;
+      background-color: #1B0F0F;
+      z-index: 1;
+      border: 3px solid #0F0606;
+    }
+
+    &:nth-child(5) {
+      right: -150px;
+      transform: translateY(-50%);
+      top: 50%;
+    }
+
+    &:nth-child(2) {
+      left: -150px;
+      transform: translateY(-50%);
+      top: 50%;
+    }
+
+    &:nth-child(4) {
+      top: -60px;
+      transform: translateX(-80%);
+      left: 80%;
+    }
+
+    &:nth-child(3) {
+      top: -60px;
+      transform: translateX(-20%);
+      left: 20%;
+    }
+
+    &:nth-child(6) {
+      bottom: -60px;
+      transform: translateX(-80%);
+      left: 80%;
+    }
+
+    &:nth-child(1) {
+      bottom: -60px;
+      transform: translateX(-20%);
+      left: 20%;
+    }
+
+  }
+
+}
