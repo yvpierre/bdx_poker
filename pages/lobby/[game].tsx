@@ -40,11 +40,9 @@ export default function Game({  }) {
     const router = useRouter()
     const {user} = router.query
 
-    const player2 = new Player("Eliott",1000)
-    const player4 = new Player("Arthur",123.11)
-    const player5 = new Player("Abdel",922121)
+    const player2 = new Player("Eliott",927, true)
 
-    let game1 = new Game("TZAS21", [new Player("Pierre", 0), new Player("Pablo", 223)]);
+    let game1 = new Game("TZAS21", [new Player("Pierre", 10, true), new Player("Pablo", 223, true)]);
     game1.addPlayer(player2)
 
     const test = [1,2,3,4]
@@ -52,17 +50,22 @@ export default function Game({  }) {
     // @ts-ignore
     function createCard(joueur) {
         return (
-            <div className={`${styles.card} ${styles.seat}`}>
-                <div className={styles.img}></div>
-                <div className={styles.cardTop}>{joueur.getNom()}</div>
-                <div className={styles.cardBottom}>802.000€</div>
-            </div>
+            <>
+
+                {joueur.getState() ? "" : ""}
+                <div className={joueur.getState() ? `${styles.card}` : `${styles.card} ${styles.empty}`}>
+                    <div className={styles.img}></div>
+                    <div className={styles.cardTop}>{joueur.getNom()}</div>
+                    <div className={styles.cardBottom}>{joueur.getStack()}€</div>
+                </div>
+            </>
+
         )
     }
 
     if(game1.players.length<6) {
         while(game1.players.length<6){
-            game1.players.push(new Player("Vide", 0))
+            game1.players.push(new Player("Vide", 0, false))
         }
     }
 

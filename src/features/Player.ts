@@ -3,10 +3,12 @@ export class Player {
     // A user is most likely the way to go
     nom:string;
     stack:number;
+    state:boolean;
 
-    constructor(name:string, stack:number) {
+    constructor(name:string, stack:number, active:boolean) {
         this.nom = name;
         this.stack = stack;
+        this.state = active;
     }
 
 
@@ -16,6 +18,10 @@ export class Player {
 
     getStack():number {
         return this.stack
+    }
+
+    getState():boolean {
+        return this.state
     }
 
     show():void {

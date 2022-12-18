@@ -18,6 +18,20 @@
 
   }
 
+  .empty {
+
+    filter: grayscale(100%);
+    opacity: 50%;
+    .cardTop {
+      font-style: italic;
+      font-weight: 300 !important;
+    }
+
+    .img {
+      background-image: none !important;
+    }
+  }
+
   .card {
     position: absolute;
     width: 275px;
