@@ -11,6 +11,7 @@ export default function App({ Component, pageProps }: AppProps) {
               <title>BDX Poker</title>
               <meta charSet="utf-8" />
           </Head>
+          <Navbar/>
           <Component {...pageProps} />
       </UserProvider>
   )

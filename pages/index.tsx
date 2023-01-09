@@ -10,8 +10,6 @@ export default function Home() {
       <>
           <div className={"app"}>
           <div className={"body"}>
-              <div className={"background"}></div>
-              <Navbar/>
               <div className={styles.main}>
                   <div className={styles.hero}>
                       <div className={styles.left}>

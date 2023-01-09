@@ -2,6 +2,7 @@ import React from 'react';
 import styles from '../../styles/Navbar.module.css';
 import Link from "next/link";
 import {useUser} from "@auth0/nextjs-auth0/client";
+import UserMenu from "./userMenu";
 
 const ButtonNavbar = () => {
 
@@ -18,12 +19,7 @@ const ButtonNavbar = () => {
         )
     } else {
         return (
-            <a
-                href="/api/auth/logout"
-                className={`${styles.btn} ${styles.btnLogout}`}
-            >
-                Logout
-            </a>
+            <UserMenu />
         )
     }
 }
