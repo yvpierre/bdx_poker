@@ -15,7 +15,20 @@ const Navbar = () => {
                 </div>
                 <div className={styles.auth}>
                     <div className={`${styles.btn} ${styles.btnRegister}`}>Register</div>
-                    <div className={`${styles.btn} ${styles.btnLogin}`}>Login</div>
+                    <a
+                        href="/api/auth/login"
+                        className={`${styles.btn} ${styles.btnLogin}`}
+                    >
+                        Log in
+                    </a>
+                    <a
+                        href="/api/auth/logout"
+                        className={`${styles.btn} ${styles.btnLogin}`}
+                    >
+                        Log out
+                    </a>
+
+
                 </div>
             </div>
         </div>

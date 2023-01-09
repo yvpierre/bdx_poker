@@ -45,13 +45,13 @@ export default function Game({  }) {
     let game1 = new Game("TZAS21", [new Player("PIERREOFLRO", 10, true), new Player("Pablo", 223, true)]);
     game1.addPlayer(player2)
 
+    game1.addPlayer(new Player("Abdel", 9022, true))
     const test = [1,2,3,4]
 
     // @ts-ignore
     function createCard(joueur) {
         return (
             <>
-
                 {joueur.getState() ? "" : ""}
                 <div className={joueur.getState() ? `${styles.card}` : `${styles.card} ${styles.empty}`}>
                     <div className={styles.img}></div>
