@@ -28,7 +28,7 @@ const Index = () => {
             />
             <Link
                   href={{
-                pathname: "/members/[user]",
+                pathname: "/chats/[user]",
                 query: {
                     nom: nomUser
                 }

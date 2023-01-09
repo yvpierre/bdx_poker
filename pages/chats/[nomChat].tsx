@@ -15,12 +15,13 @@ export default function Membre({ chat }) {
             <div className={styles.body}>
                 <h1>Salut {user}</h1>
                 <img src={chat[0].url} width={500} height={500} className={styles.imgChat}/>
-                <Link href={"/members"} className={styles.btnRetour}>Retour</Link>
+                <Link href={"/chats"} className={styles.btnRetour}>Retour</Link>
             </div>
         </>
 
     )
 }
+
 
 export async function getServerSideProps(context: GetServerSidePropsContext) {
     const req = await fetch('https://api.thecatapi.com/v1/images/search');
