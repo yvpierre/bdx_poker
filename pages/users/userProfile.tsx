@@ -14,8 +14,15 @@ export default function User() {
             <div>
                 {/* @ts-ignore */}
                 <img src={user.picture} alt={user.name} />
-                <h2>{user.name}</h2>
-                <p>{user.email}</p>
+                <h2>nom : {user.name}</h2>
+                <p>email : {user.email}</p>
+                <p>org id : {user.org_id}</p>
+                <p>email verified : {user.email_verified}</p>
+                <p>updated at : {user.updated_at}</p>
+                <p>nickname : {user.nickname}</p>
+                <p>sub : {user.sub}</p>
+
+
             </div>
         )
     );

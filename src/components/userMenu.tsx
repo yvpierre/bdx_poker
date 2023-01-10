@@ -19,7 +19,12 @@ const UserMenu = () => {
                     />
                 </div>
                 <div className={styles.dropDownContent}>
-                    <a className={styles.item}>Profil</a>
+                    <a
+                        href={"/users/userProfile"}
+                        className={styles.item}
+                    >
+                        Profil
+                    </a>
                     <a
                         href="/api/auth/logout"
                         className={styles.item}

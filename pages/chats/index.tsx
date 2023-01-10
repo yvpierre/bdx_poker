@@ -4,7 +4,7 @@ import styles from '../../styles/Members.module.css'
 
 const Index = () => {
 
-    const [nomUser, setNomUser] = useState('');
+    const [nomChat, setNomChat] = useState('');
 
     function checkIpt(){
         let ipt = document.querySelector(".ipt")
@@ -23,16 +23,16 @@ const Index = () => {
                 name={"iptNom"}
                 className={"ipt"}
                 type={"text"}
-                value={nomUser}
-                onChange={e => {setNomUser(e.currentTarget.value)}}
+                value={nomChat}
+                onChange={e => {setNomChat(e.currentTarget.value)}}
             />
             <Link
                   href={{
-                pathname: "/chats/[user]",
+                pathname: "/chats/[nomChat]",
                 query: {
-                    nom: nomUser
+                    nom: nomChat
                 }
-            }} as = {`/members/${nomUser}`} onClick={checkIpt}
+            }} as = {`/chats/${nomChat}`} onClick={checkIpt}
               className={styles.btnSuiv}
             >Valider</Link>
         </div>

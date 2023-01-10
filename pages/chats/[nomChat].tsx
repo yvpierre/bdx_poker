@@ -3,17 +3,17 @@ import { useRouter} from "next/router";
 import {GetServerSidePropsContext} from "next";
 import {string} from "prop-types";
 import Link from "next/link";
-import styles from '../../styles/User.module.css'
+import styles from '../../styles/Chats.module.css'
 
 // @ts-ignore
-export default function Membre({ chat }) {
+export default function nomChat({ chat }) {
     const router = useRouter()
-    const {user} = router.query
+    const {nomChat} = router.query
 
     return (
         <>
             <div className={styles.body}>
-                <h1>Salut {user}</h1>
+                <h1>Salut {nomChat}</h1>
                 <img src={chat[0].url} width={500} height={500} className={styles.imgChat}/>
                 <Link href={"/chats"} className={styles.btnRetour}>Retour</Link>
             </div>
