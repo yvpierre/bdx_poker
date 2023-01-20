@@ -10,27 +10,34 @@ const UserMenu = () => {
         return (
             <div className={styles.dropDown}>
                 <div className={styles.visible}>
-                    <div className={styles.nomUser}>{user.name}</div>
                     {/* @ts-ignore */}
                     <img src={user.picture} alt={user.name}
-                         width={25}
-                         height={25}
+                         width={35}
+                         height={35}
                          className={styles.img}
                     />
                 </div>
                 <div className={styles.dropDownContent}>
                     <a
                         href={"/users/userProfile"}
-                        className={styles.item}
+                        className={`${styles.item} ${styles.userProfile}`}
                     >
-                        Profil
+                        <div className={styles.userName}>{user.name}</div>
+                        <div className={styles.userId}>@{user.nickname}</div>
                     </a>
                     <a
-                        href="/api/auth/logout"
+                        href="/settings"
                         className={styles.item}
                     >
-                        Logout
+                        Settings
                     </a>
+                    <a
+                    href="/api/auth/logout"
+                    className={styles.item}
+                    >
+                        <div className={styles.iconLogout}></div>
+                    Sign out
+                </a>
                 </div>
             </div>
         );

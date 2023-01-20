@@ -18,8 +18,12 @@ const ButtonNavbar = () => {
             </a>
         )
     } else {
+
         return (
-            <UserMenu />
+            <>
+                {/* @ts-ignore */}
+                <UserMenu />
+            </>
         )
     }
 }
