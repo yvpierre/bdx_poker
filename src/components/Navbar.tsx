@@ -28,6 +28,10 @@ const ButtonNavbar = () => {
     }
 }
 
+// function to check if the user is logged in or not
+
+
+
 const Navbar = () => {
     return (
         <div>

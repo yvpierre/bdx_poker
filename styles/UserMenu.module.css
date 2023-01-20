@@ -35,17 +35,17 @@
   flex-direction: column;
 }
 .dropDown .dropDownContent .item {
-  min-height: 40px;
+  min-height: 45px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding-left: 20px;
-  color: black;
-  background-color: white;
-  border-bottom: 1px solid green;
+  padding-left: 15px;
+  color: white;
+  background-color: #291A1A;
+  border-bottom: 1px solid #140707;
 }
 .dropDown .dropDownContent .item:hover {
-  background-color: lightcoral;
+  background-color: #473232;
 }
 .dropDown .dropDownContent .item:nth-child(1) {
   border-radius: 15px 15px 0 0;
@@ -56,7 +56,7 @@
   border-bottom: none;
 }
 .dropDown .dropDownContent .userProfile {
-  height: 60px;
+  height: 65px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -69,10 +69,10 @@
   font-weight: 400;
 }
 .dropDown .dropDownContent .iconLogout {
-  background: url("../public/assets/icons/arrow-right-to-bracket-solid.svg");
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
+  background: no-repeat url("../public/assets/icons/arrowLogout.png") center;
+  width: 50px;
+  height: 50px;
+  background-size: 80%;
 }
 
 /*# sourceMappingURL=UserMenu.module.css.map */

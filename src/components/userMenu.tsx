@@ -32,12 +32,12 @@ const UserMenu = () => {
                         Settings
                     </a>
                     <a
-                    href="/api/auth/logout"
-                    className={styles.item}
+                        href="/api/auth/logout"
+                        className={styles.item}
                     >
                         <div className={styles.iconLogout}></div>
-                    Sign out
-                </a>
+                        Sign out
+                    </a>
                 </div>
             </div>
         );
